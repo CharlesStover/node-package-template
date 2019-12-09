@@ -16,7 +16,7 @@
     "inlineSourceMap": false,
     "jsx": "react",
     "lib": ["dom", "es5"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
