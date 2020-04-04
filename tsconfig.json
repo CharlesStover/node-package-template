@@ -8,7 +8,7 @@
     "alwaysStrict": true,
     "checkJs": false,
     "declaration": true,
-    "declarationDir": "dist",
+    "declarationDir": "types",
     "declarationMap": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
@@ -39,11 +39,11 @@
     "target": "es5"
   },
   "exclude": [
-    "build",
     "coverage",
     "dist",
     "jest",
     "node_modules",
+    "types",
     "**/test-utils/*.ts",
     "**/test-utils/*.tsx",
     "**/*.test.ts",

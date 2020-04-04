@@ -1,6 +1,6 @@
 module.exports = {
   moduleNameMapper: {
-    '\\.s?css$': '<rootDir>/tests/mocks/empty.ts',
+    '\\.s?css$': '<rootDir>/test-utils/empty.ts',
   },
   roots: ['<rootDir>/src'],
   transform: {
