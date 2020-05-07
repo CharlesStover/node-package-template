@@ -13,10 +13,12 @@
     "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": false,
     "inlineSourceMap": false,
+    "isolatedModules": false,
     "jsx": "react",
-    "lib": ["dom", "es5"],
-    "module": "esnext",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -36,7 +38,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "suppressImplicitAnyIndexErrors": false,
-    "target": "es5"
+    "target": "ES5"
   },
   "exclude": [
     "coverage",
