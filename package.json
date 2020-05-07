@@ -17,24 +17,27 @@
   },
   "files": [
     "dist",
+    "types",
     "package.json",
-    "README.md",
-    "types"
+    "README.md"
   ],
   "scripts": {
     "build": "npm run rollup",
-    "clean": "rm -rf build coverage dist node_modules",
+    "clean": "rm -rf build coverage dist node_modules package-lock.json",
+    "eslint": "eslint 'src/**/*.{js,json,ts,tsx}'",
+    "jest": "jest",
     "prepublishOnly": "npm run rollup",
     "rollup": "rollup --config",
     "start": "rollup --config --watch",
-    "test": "jest",
-    "test-watch": "jest --coverage=false --watch",
-    "tsc": "tsc"
+    "test": "npm run eslint && npm run jest",
+    "test-watch": "jest --coverage=false --watch"
   },
   "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-json": "^4.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-url": "^4.0.0",
     "@testing-library/react": "^9.0.0",
     "@testing-library/react-hooks": "^2.0.0",
     "@types/jest": "^23.0.0",
