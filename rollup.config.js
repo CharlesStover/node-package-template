@@ -1,21 +1,26 @@
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import nodeResolve from '@rollup/plugin-node-resolve';
+import url from '@rollup/plugin-url';
 import postcss from 'rollup-plugin-postcss';
 import typescript2 from 'rollup-plugin-typescript2';
 import packageJson from './package.json';
 
-const PEER_DEPENDENCIES = new Set(Object.keys(packageJson.peerDependencies));
+const EXTERNAL = new Set([
+  ...Object.keys(packageJson.dependencies),
+  ...Object.keys(packageJson.peerDependencies),
+]);
 
 export default [
   {
     input: 'src/index.ts',
     external(id) {
-      if (PEER_DEPENDENCIES.has(id)) {
+      if (EXTERNAL.has(id)) {
         return true;
       }
 
-      for (const peerDependency of PEER_DEPENDENCIES) {
-        if (new RegExp(`^${peerDependency}\/`).test(id)) {
+      for (const pkg of EXTERNAL) {
+        if (id.startsWith(`${pkg}/`)) {
           return true;
         }
       }
@@ -33,9 +38,10 @@ export default [
       },
     ],
     plugins: [
-      typescript2({
-        useTsconfigDeclarationDir: true,
+      json({
+        compact: true,
       }),
+      url(),
       postcss({
         autoModules: true,
         extract: false,
@@ -45,7 +51,10 @@ export default [
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
       commonjs({
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx'],
+      }),
+      typescript2({
+        useTsconfigDeclarationDir: true,
       }),
     ],
   },
