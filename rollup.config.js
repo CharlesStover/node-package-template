@@ -45,6 +45,7 @@ export default [
       postcss({
         autoModules: true,
         extract: false,
+        minimize: true,
         use: ['sass'],
       }),
       nodeResolve({
