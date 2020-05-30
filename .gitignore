@@ -1,10 +1,10 @@
-/.git
-/.vscode
-/coverage
-/dist
-/jest
-/node_modules
-/types
+/.git/
+/.vscode/
+/coverage/
+/dist/
+/node_modules/
+/types/
 /.env
+/.tsbuildinfo
 /yarn.lock
 /yarn-error.log
