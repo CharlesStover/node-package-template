@@ -41,7 +41,6 @@
     "target": "ES5"
   },
   "exclude": [
-    "coverage",
     "dist",
     "jest",
     "node_modules",
