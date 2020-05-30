@@ -1,9 +1,11 @@
 /.git/
+/.idea/
 /.vscode/
 /coverage/
 /dist/
 /node_modules/
 /types/
+/*.iml
 /.env
 /.tsbuildinfo
 /yarn.lock
