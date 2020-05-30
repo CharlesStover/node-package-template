@@ -1,7 +1,7 @@
 /.git/
 /.idea/
 /.vscode/
-/coverage/
+/jest/
 /node_modules/
 /src/
 /test-utils/
