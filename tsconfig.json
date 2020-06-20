@@ -41,6 +41,7 @@
     "target": "ES5"
   },
   "exclude": [
+    ".yarn",
     "dist",
     "jest",
     "node_modules",
