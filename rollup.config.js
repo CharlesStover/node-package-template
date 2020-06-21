@@ -2,6 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
+import path from 'path';
 import postcssUrl from 'postcss-url';
 import postcss from 'rollup-plugin-postcss';
 import typescript2 from 'rollup-plugin-typescript2';
