@@ -1,6 +1,7 @@
 /.git/
 /.idea/
 /.vscode/
+/.yarn/
 /jest/
 /node_modules/
 /src/
@@ -17,6 +18,7 @@
 /.npmignore
 /.prettierrc.json
 /.travis.yml
+/.yarnrc.yml
 /jest.config.js
 /package-lock.json
 /rollup.config.js
