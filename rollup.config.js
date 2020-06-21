@@ -35,7 +35,6 @@ export default [
 
       return false;
     },
-    indent: !IS_DEV,
     input: 'src/index.ts',
     output: [
       {
@@ -86,7 +85,6 @@ export default [
         useTsconfigDeclarationDir: true,
       }),
     ],
-    sourcemaps: IS_DEV,
     treeshake: !IS_DEV,
     watch: {
       exclude: 'node_modules/**',
