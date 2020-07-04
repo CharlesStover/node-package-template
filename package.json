@@ -27,14 +27,12 @@
     "module": "./dist/esm/index.mjs"
   },
   "scripts": {
-    "build": "npm run rollup",
     "clean": "rm -rf dist jest node_modules package-lock.json yarn.lock",
-    "eslint": "eslint 'src/**/*.{js,json,ts,tsx}'",
+    "eslint": "eslint",
     "jest": "jest",
-    "prepublishOnly": "npm run rollup",
-    "rollup": "rollup --config",
+    "prepublishOnly": "rollup --config",
     "start": "rollup --config --watch",
-    "test": "npm run eslint && npm run jest",
+    "test": "eslint && jest",
     "test-watch": "jest --coverage=false --watch",
     "yarn-upgrade": "yarn up * && yarn up @*/*",
     "yarn-vscode": "yarn dlx @yarnpkg/pnpify --sdk vscode"
