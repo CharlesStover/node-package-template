@@ -35,7 +35,9 @@
     "rollup": "rollup --config",
     "start": "rollup --config --watch",
     "test": "npm run eslint && npm run jest",
-    "test-watch": "jest --coverage=false --watch"
+    "test-watch": "jest --coverage=false --watch",
+    "yarn-upgrade": "yarn up * && yarn up @*/*",
+    "yarn-vscode": "yarn dlx @yarnpkg/pnpify --sdk vscode"
   },
   "dependencies": {},
   "devDependencies": {
