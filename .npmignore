@@ -13,8 +13,6 @@
 /.eslintrc.json
 /.gitattributes
 /.gitignore
-/.huskyrc.json
-/.lintstagedrc.json
 /.npmignore
 /.prettierrc.json
 /.travis.yml
