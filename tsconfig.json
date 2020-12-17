@@ -16,7 +16,7 @@
     "incremental": false,
     "inlineSourceMap": false,
     "isolatedModules": false,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "node",

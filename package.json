@@ -28,7 +28,6 @@
   },
   "scripts": {
     "build": "rollup --config",
-    "clean": "rm -rf dist jest node_modules package-lock.json yarn.lock",
     "eslint": "eslint",
     "jest": "jest",
     "start": "rollup --config --watch",
@@ -66,7 +65,7 @@
     "rollup-plugin-typescript2": "^0.29.0",
     "ts-jest": "^26.0.0",
     "tslib": "^2.0.0",
-    "typescript": "^4.0.0"
+    "typescript": "^4.1.0"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",
