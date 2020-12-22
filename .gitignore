@@ -1,12 +1,15 @@
 /.git/
 /.idea/
 /.vscode/
+/build/
 /dist/
 /jest/
 /node_modules/
 /types/
 /*.iml
 /.env
+/.env.development
+/.env.local
 /.pnp.cjs
 /.pnp.js
 /.tsbuildinfo
