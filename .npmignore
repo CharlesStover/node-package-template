@@ -1,5 +1,6 @@
 /.git/
 /.idea/
+/.storybook/
 /.vscode/
 /.yarn/
 /jest/
