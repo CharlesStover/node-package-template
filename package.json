@@ -21,6 +21,10 @@
     "dist",
     "types"
   ],
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/CharlesStover"
+  },
   "publishConfig": {
     "access": "public",
     "main": "./dist/cjs/index.js",
