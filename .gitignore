@@ -1,6 +1,9 @@
 /.git/
 /.idea/
 /.vscode/
+/.yarn/unplugged/
+/.yarn/build-state.yml
+/.yarn/install-state.gz
 /build/
 /dist/
 /jest/
@@ -14,6 +17,5 @@
 /.pnp.js
 /.tsbuildinfo
 /build
-/yarn.lock
 /yarn-error.log
 .DS_Store
