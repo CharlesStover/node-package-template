@@ -1,6 +1,11 @@
 export default {
   cacheDirectory: './jest/cache',
   collectCoverage: true,
+  coverageDirectory: './jest/coverage',
+  resetMocks: true,
+  resetModules: true,
+  restoreMocks: true,
+  roots: ['<rootDir>/src'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/**/*.d.ts',
@@ -8,7 +13,6 @@ export default {
     '!<rootDir>/src/**/*.test.{ts,tsx}',
     '!<rootDir>/src/**/test-utils/*.{ts,tsx}',
   ],
-  coverageDirectory: './jest/coverage',
   coverageThreshold: {
     global: {
       branches: 100,
@@ -20,10 +24,6 @@ export default {
   moduleNameMapper: {
     '\\.(?:css|gif|jpg|png|scss)$': '<rootDir>/test-utils/empty.ts',
   },
-  resetMocks: true,
-  resetModules: true,
-  restoreMocks: true,
-  roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
