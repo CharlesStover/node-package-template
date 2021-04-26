@@ -6,7 +6,7 @@
   "homepage": "https://www.npmjs.com/package/PACKAGE-NAME",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.mjs",
+  "module": "./dist/esm/index.js",
   "repository": "github:CharlesStover/PACKAGE-NAME",
   "type": "module",
   "types": "./types/index.d.ts",
