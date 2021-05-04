@@ -5,8 +5,8 @@
   "description": "DESCRIPTION",
   "homepage": "https://www.npmjs.com/package/PACKAGE-NAME",
   "license": "MIT",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.mjs",
   "repository": "github:CharlesStover/PACKAGE-NAME",
   "type": "module",
   "types": "./types/index.d.ts",
@@ -27,8 +27,8 @@
   },
   "publishConfig": {
     "access": "public",
-    "main": "./dist/cjs/index.js",
-    "module": "./dist/esm/index.js"
+    "main": "./dist/cjs/index.cjs",
+    "module": "./dist/esm/index.mjs"
   },
   "scripts": {
     "build": "rollup --config",
@@ -72,7 +72,7 @@
     "typescript": "^4.1.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   }
 }
