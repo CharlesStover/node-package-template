@@ -21,6 +21,8 @@ const EXTERNAL = new Set([
 export default [
   {
     cache: true,
+    input: 'src/index.ts',
+    treeshake: !IS_DEV,
     external(id) {
       if (EXTERNAL.has(id)) {
         return true;
@@ -34,16 +36,19 @@ export default [
 
       return false;
     },
-    input: 'src/index.ts',
     output: [
       {
+        chunkFileNames: '[name]-[hash].cjs',
         dir: MAIN_DIR,
-        exports: 'auto',
+        entryFileNames: '[name].cjs',
+        exports: 'named',
         format: 'cjs',
         sourcemap: IS_DEV,
       },
       {
+        chunkFileNames: '[name]-[hash].mjs',
         dir: MODULE_DIR,
+        entryFileNames: '[name].mjs',
         format: 'es',
         sourcemap: IS_DEV,
       },
@@ -86,7 +91,6 @@ export default [
         useTsconfigDeclarationDir: true,
       }),
     ],
-    treeshake: !IS_DEV,
     watch: {
       exclude: 'node_modules/**',
     },
