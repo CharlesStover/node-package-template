@@ -8,6 +8,8 @@ import postcss from 'rollup-plugin-postcss';
 import typescript2 from 'rollup-plugin-typescript2';
 import packageJson from './package.json';
 
+const COMMONJS_EXTENSION = 'cjs';
+const ESM_EXTENSION = 'js';
 const IS_DEV = process.env.NODE_ENV === 'development';
 const MAIN_DIR = path.parse(packageJson.main).dir;
 const MODULE_DIR = path.parse(packageJson.module).dir;
@@ -38,17 +40,17 @@ export default [
     },
     output: [
       {
-        chunkFileNames: '[name]-[hash].cjs',
+        chunkFileNames: `[name]-[hash].${COMMONJS_EXTENSION}`,
         dir: MAIN_DIR,
-        entryFileNames: '[name].cjs',
+        entryFileNames: `[name].${COMMONJS_EXTENSION}`,
         exports: 'named',
         format: 'cjs',
         sourcemap: IS_DEV,
       },
       {
-        chunkFileNames: '[name]-[hash].mjs',
+        chunkFileNames: `[name]-[hash].${ESM_EXTENSION}`,
         dir: MODULE_DIR,
-        entryFileNames: '[name].mjs',
+        entryFileNames: `[name].${ESM_EXTENSION}`,
         format: 'es',
         sourcemap: IS_DEV,
       },
