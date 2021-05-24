@@ -1,5 +1,5 @@
 {
-  "exclude": ["/.yarn/", "/dist/", "/jest/", "/node_modules/", "/types/"],
+  "exclude": [".git", ".vscode", ".yarn", "dist", "jest", "node_modules", "types"],
   "extends": "./tsconfig.json",
   "include": [
     ".eslintrc.json",
