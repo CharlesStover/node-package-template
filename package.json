@@ -36,10 +36,10 @@
   },
   "scripts": {
     "build": "rollup --config",
-    "eslint": "eslint",
+    "eslint": "eslint src",
     "jest": "jest",
     "start": "rollup --config --watch",
-    "test": "eslint && jest",
+    "test": "eslint src && jest",
     "test-watch": "jest --coverage=false --watch"
   },
   "devDependencies": {
