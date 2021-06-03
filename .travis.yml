@@ -1,7 +1,7 @@
 language: node_js
 node_js: 14
 branches:
-  only: master
+  only: main
 install:
   - yarn
 script:
@@ -12,6 +12,6 @@ deploy:
     secure:
   email: npmjs@charlesstover.com
   on:
-    branch: master
+    branch: main
   provider: npm
   skip_cleanup: true
