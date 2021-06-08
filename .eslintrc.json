@@ -100,7 +100,6 @@
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-unnecessary-type-arguments": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
-    "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/no-unused-vars": "error",
@@ -172,30 +171,45 @@
     "semi": "off",
     "space-before-function-paren": "off",
     "space-infix-ops": "off",
-    "@typescript-eslint/comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "enums": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "always-multiline",
-      "generics": "always-multiline",
-      "imports": "always-multiline",
-      "objects": "always-multiline",
-      "tuples": "always-multiline"
-    }],
-    "@typescript-eslint/consistent-type-assertions": ["error", {
-      "assertionStyle": "never",
-      "objectLiteralTypeAssertions": "never"
-    }],
-    "@typescript-eslint/consistent-type-imports": ["error", {
-      "disallowTypeAnnotations": true,
-      "prefer": "type-imports"
-    }],
-    "react/prop-types": ["error", {
-      "skipUndeclared": true
-    }],
-    "sort-imports": ["error", {
-      "ignoreDeclarationSort": true
-    }]
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "enums": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline",
+        "generics": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline",
+        "tuples": "always-multiline"
+      }
+    ],
+    "@typescript-eslint/consistent-type-assertions": [
+      "error",
+      {
+        "assertionStyle": "never",
+        "objectLiteralTypeAssertions": "never"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "disallowTypeAnnotations": true,
+        "prefer": "type-imports"
+      }
+    ],
+    "react/prop-types": [
+      "error",
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true
+      }
+    ]
   },
 
   "settings": {
