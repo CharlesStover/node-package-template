@@ -6,6 +6,7 @@ export default {
   resetModules: true,
   restoreMocks: true,
   roots: ['<rootDir>/src'],
+  testEnvironment: 'jsdom',
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/**/*.d.ts',
