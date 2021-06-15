@@ -45,7 +45,7 @@
     "@typescript-eslint/ban-ts-comment": "error",
     "@typescript-eslint/ban-tslint-comment": "error",
     "@typescript-eslint/ban-types": "error",
-    "@typescript-eslint/brace-style": "error",
+    "@typescript-eslint/brace-style": "off",
     "@typescript-eslint/class-literal-property-style": ["error", "getters"],
     "@typescript-eslint/comma-spacing": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
