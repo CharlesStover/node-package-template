@@ -6,13 +6,6 @@
 
 Description
 
-## Getting started
-
-- `yarn set version latest`
-- `yarn`
-- `yarn up * && yarn up @*/*`
-- `yarn dlx @yarnpkg/pnpify --sdk vscode`
-
 ## Install
 
 - `npm install package-name` or
@@ -30,8 +23,8 @@ packageName();
 
 API
 
-## Sponsor 💗
+## Contributing
 
-If you are a fan of this project, you may
-[become a sponsor](https://github.com/sponsors/CharlesStover) via GitHub's
-Sponsors Program.
+- `yarn set version latest`
+- `yarn up * @*/*`
+- `yarn dlx @yarnpkg/pnpify --sdk vscode`
