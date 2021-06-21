@@ -27,4 +27,5 @@ API
 
 - `yarn set version latest`
 - `yarn up * @*/*`
-- `yarn dlx @yarnpkg/pnpify --sdk vscode`
+- `yarn add --dev @yarnpkg/pnpify`
+- `yarn pnpify --sdk vscode`
