@@ -126,7 +126,6 @@
     "@typescript-eslint/return-await": "error",
     "@typescript-eslint/semi": "error",
     "@typescript-eslint/sort-type-union-intersection-members": "error",
-    "@typescript-eslint/space-before-function-paren": ["error", "never"],
     "@typescript-eslint/space-infix-ops": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
@@ -180,7 +179,7 @@
         "generics": "always-multiline",
         "imports": "always-multiline",
         "objects": "always-multiline",
-        "tuples": "always-multiline"
+        "tuples": "never"
       }
     ],
     "@typescript-eslint/consistent-type-assertions": [
@@ -217,6 +216,14 @@
       {
         "format": ["camelCase", "PascalCase"],
         "selector": "function"
+      }
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "named": "never"
       }
     ],
     "react/prop-types": [
