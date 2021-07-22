@@ -27,5 +27,5 @@ API
 
 - `yarn set version latest`
 - `yarn up * @*/*`
-- `yarn add --dev @yarnpkg/pnpify`
-- `yarn pnpify --sdk vscode`
+- If you use VIM, run `yarn dlx @yarnpkg/sdks vim`.
+- If you use Visual Studio Code, run `yarn dlx @yarnpkg/sdks vscode`.
