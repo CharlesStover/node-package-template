@@ -1,5 +1,6 @@
 {
   "include": ["src/**/*"],
+
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -41,7 +42,9 @@
     "suppressImplicitAnyIndexErrors": false,
     "target": "ES5"
   },
+
   "exclude": [
+    "/.github/",
     "/.yarn/",
     "/dist/",
     "/jest/",
