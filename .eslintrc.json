@@ -197,7 +197,7 @@
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        "format": ["camelCase"],
+        "format": ["camelCase", "PascalCase"],
         "leadingUnderscore": "allow",
         "selector": "default",
         "trailingUnderscore": "allow"
