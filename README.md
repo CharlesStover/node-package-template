@@ -27,5 +27,5 @@ API
 
 - `yarn set version latest`
 - `yarn up * @*/*`
-- If you use VIM, run `yarn dlx @yarnpkg/sdks vim`.
-- If you use Visual Studio Code, run `yarn dlx @yarnpkg/sdks vscode`.
+- If you use VIM, run `yarn sdks vim`.
+- If you use Visual Studio Code, run `yarn sdks vscode`.
