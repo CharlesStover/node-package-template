@@ -38,9 +38,9 @@
     "build": "rollup --config",
     "eslint": "eslint src",
     "jest": "jest",
+    "jest-watch": "jest --coverage=false --watch",
     "start": "rollup --config --watch",
-    "test": "eslint src && jest",
-    "test-watch": "jest --coverage=false --watch"
+    "test": "eslint src && jest"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
