@@ -75,7 +75,7 @@ jobs:
             types
 
   publish:
-    needs: [jest, rollup]
+    needs: [eslint, jest, rollup]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
