@@ -35,12 +35,11 @@
     "module": "./dist/esm/index.js"
   },
   "scripts": {
-    "build": "rollup --config",
     "eslint": "eslint src",
     "jest": "jest",
     "jest-watch": "jest --coverage=false --watch",
-    "start": "rollup --config --watch",
-    "test": "eslint src && jest"
+    "rollup": "rollup --config",
+    "rollup-watch": "rollup --config --watch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
