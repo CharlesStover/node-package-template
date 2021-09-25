@@ -18,10 +18,6 @@
   "directories": {
     "lib": "src"
   },
-  "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.cjs"
-  },
   "files": [
     "dist",
     "types"
