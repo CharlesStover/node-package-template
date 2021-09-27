@@ -2,6 +2,7 @@ export default {
   cacheDirectory: './jest/cache',
   collectCoverage: true,
   coverageDirectory: './jest/coverage',
+  coverageReporters: ['json', 'lcov', ['text', { skipFull: true }], 'clover'],
   resetMocks: true,
   resetModules: true,
   restoreMocks: true,
