@@ -18,6 +18,7 @@
 /.gitattributes
 /.gitignore
 /.npmignore
+/.npmrc
 /.pnp.cjs
 /.prettierrc.json
 /.travis.yml
