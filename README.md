@@ -27,6 +27,6 @@ API
 ## Contributing
 
 - `yarn set version latest`
-- `yarn up * @*/*`
+- `yarn up "*" "@*/*"`
 - If you use VIM, run `yarn sdks vim`.
 - If you use Visual Studio Code, run `yarn sdks vscode`.
