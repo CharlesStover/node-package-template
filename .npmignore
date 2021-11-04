@@ -4,7 +4,6 @@
 /.storybook/
 /.vscode/
 /.yarn/
-/cypress/
 /jest/
 /node_modules/
 /scripts/
