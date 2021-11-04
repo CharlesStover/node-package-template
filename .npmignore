@@ -19,6 +19,7 @@
 /.npmignore
 /.npmrc
 /.pnp.cjs
+/.pnp.loader.mjs
 /.prettierrc.json
 /.travis.yml
 /.tsbuildinfo
