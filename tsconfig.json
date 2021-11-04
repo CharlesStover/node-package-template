@@ -10,7 +10,7 @@
     "alwaysStrict": true,
     "checkJs": false,
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist/types",
     "declarationMap": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
