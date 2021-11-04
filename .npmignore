@@ -21,7 +21,6 @@
 /.pnp.cjs
 /.pnp.loader.mjs
 /.prettierrc.json
-/.travis.yml
 /.tsbuildinfo
 /.yarnrc.yml
 /babel.config.cjs
@@ -29,7 +28,6 @@
 /jest.config.mjs
 /package-lock.json
 /rollup.config.js
-/tsconfig.cypress.json
 /tsconfig.development.json
 /tsconfig.eslint.json
 /tsconfig.json
